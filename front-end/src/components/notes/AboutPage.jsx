@@ -10,7 +10,7 @@ function AboutPage() {
                 <p> The application allows you to browse through a list of notes, as well as add, update, and delete notes.</p>
                 
             
-                <p>The source code is available in <a href=""> this repository </a> on GitHub.</p>
+                <p>The source code is available in <a href="https://github.com/Toluwase10/keeper"> this repository </a> on GitHub.</p>
                 <p id="aboutMod">Modified from the Keeper project by Angela Yu's Web Development Bootcamp on Udemy.</p>
         </div>
     );
