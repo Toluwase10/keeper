@@ -24,7 +24,7 @@ function NoteAdd(props){
             alert("Content can't be blank");
         } 
         else{
-            axios.post("http://localhost:5000/api/notes", note) //sends data to the API endpoint
+            axios.post("/api/notes", note) //sends data to the API endpoint
                 .then(res => props.history.push(`/notes/${res.data._id}`)) //redirects to the note info page
                 .catch(err => console.log("Error: " + err));
         }

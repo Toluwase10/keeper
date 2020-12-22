@@ -7,7 +7,6 @@ import NoteInfo from "./notes/NoteInfo";
 import NoteAdd from "./notes/NoteAdd";
 import NoteEdit from "./notes/NoteEdit";
 import AboutPage from "./notes/AboutPage";
-import Header from "./Header";
 import Footer from "./Footer";
 
 function App() {

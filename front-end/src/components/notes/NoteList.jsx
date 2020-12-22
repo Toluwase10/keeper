@@ -9,7 +9,7 @@ function NoteList(props){
 
 
     useEffect(() => {
-        axios.get("http://localhost:5000/api/notes/")
+        axios.get("/api/notes/")
             .then(res => setNotes(res.data))
             .catch(err => console.log(err));
     }, []);

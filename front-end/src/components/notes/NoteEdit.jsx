@@ -13,7 +13,7 @@ function NoteEdit(props) {
 
     //grabs the title and content of the id in question and passes the data to the "note" array
     useEffect(() => {
-        axios.get(`http://localhost:5000/api/notes/${props.match.params._id}`)
+        axios.get(`/api/notes/${props.match.params._id}`)
             .then(res => setNote(res.data))
             .catch(err => console.log("Error: " + err));
     }, [props]);
@@ -24,7 +24,7 @@ function NoteEdit(props) {
         if (!note.title || !note.content) {
             alert("'Title' or 'Content' cannot be blank");
         } else {
-            axios.patch(`http://localhost:5000/api/notes/${props.match.params._id}`, note) //sends data to the API patch endpoint
+            axios.patch(`/api/notes/${props.match.params._id}`, note) //sends data to the API patch endpoint
                 .then(props.history.push(`/notes/${note._id}`)) //redirects to the note info page
                 .catch(err => console.log("Error: " + err));
         }
